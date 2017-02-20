@@ -22,7 +22,7 @@ class LexTo (object):
 	
 		self.lexto.wordInstance(line)
 		typeList = self.lexto.getTypeList()
-		typeList = [self.typeString[n] for n in typeList]
+		typeList = [self.typeString[n.value] for n in typeList]
 
 		wordList = []  
 		begin = self.lexto.first()
